@@ -140,7 +140,7 @@ module.exports = function (grunt) {
       all: {
         options: {
           run: true,
-	  timeout: 10000,
+	  timeout: 50000,
           urls: ['http://<%= connect.test.options.hostname %>:<%= connect.test.options.port %>/index.html']
         }
       }
