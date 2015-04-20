@@ -15,6 +15,7 @@ module.exports = function (grunt) {
 
   // Load grunt tasks automatically
   require('load-grunt-tasks')(grunt);
+  grunt.loadNpmTasks('grunt-gh-pages');
 
   // Configurable paths
   var config = {
@@ -24,6 +25,13 @@ module.exports = function (grunt) {
 
   // Define the configuration for all the tasks
   grunt.initConfig({
+
+  'gh-pages': {
+    options: {
+      base: 'dist'
+    },
+    src: ['**']
+  },
 
     // Project settings
     config: config,
