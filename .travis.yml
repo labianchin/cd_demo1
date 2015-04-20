@@ -8,3 +8,4 @@ before_install:
 install:
   - 'npm install'
   - 'bower install'
+  - 'cd test && bower install'
